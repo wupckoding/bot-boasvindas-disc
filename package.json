@@ -1,0 +1,17 @@
+{
+  "name": "Wupc Bot boas vindas",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "colors": "^1.4.0",
+    "discord-modals": "^1.3.7",
+    "discord.js": "^13.9.0",
+    "quick.db": "^9.0.5",
+    "request": "^2.88.2"
+  }
+}
