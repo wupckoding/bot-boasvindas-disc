@@ -3,7 +3,9 @@ const colors = require("colors");
 const db = require('quick.db')
 const fs = require('fs');
 const request = require('request');
+require('dotenv').config()
 const client = new Discord.Client({
+    
     //fetchAllMembers: false,
     //restTimeOffset: 0,
     //restWsBridgetimeout: 100,
@@ -92,5 +94,5 @@ process.on('multipleResolves', (type, promise, reason) => {
 });
 
 
-client.login(fs.readFileSync('./token.txt').toString())
+client.login(process.env.TOKENAPI);
 
